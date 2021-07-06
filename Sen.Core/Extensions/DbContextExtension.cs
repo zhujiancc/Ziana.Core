@@ -15,7 +15,7 @@ namespace Sen.Core
             IDbTransaction transaction = null,
             bool buffered = true,
             int? commandTimeout = null,
-            CommandType? commandType = null) where T : SenEntity
+            CommandType? commandType = null) where T : ISenEntity
         {
             var conn = context.Database.GetDbConnection();
 

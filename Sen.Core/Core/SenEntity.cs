@@ -2,7 +2,9 @@
 
 namespace Sen.Core
 {
-    public class SenEntity<T> where T : struct
+    public interface ISenEntity { }
+
+    public class SenEntity<T> : ISenEntity where T : struct
     {
         public int Id { get; set; }
 
